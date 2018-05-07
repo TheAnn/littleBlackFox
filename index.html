@@ -1,59 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>food story</title>
-		
-		<link rel="stylesheet" type="text/css" href="style.css"/>
-		<div class="header">		
-		 
-        <img src="header2.png" style= " width: 100%"  />
-        
-    </div>  
-		
-	</head>
-	<body>
-	
-	
-	<div class="space">
+<html>
+ <head>
+  <meta charset="utf-8" />
+ 	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<title> AL</title>
+
+	<link rel="stylesheet" href="style.css"/>
+	<script type="text/javascript" src="script.js"></script>
+ </head>
+
+ <body>
+   <div class="empty"></div>
+   <div class="left">
+   	<div class="name">
+     <img class="mainLogo" src="logo3.png" >
+     <p> Anna Lunterova </p>
+     
+   </div>
+   </div>
+
+   <div class="right">
+   	 <div class="links">
+   		<p>  <a href="cv.pdf" download="AnnaLunterovaCV" > CV </a>  </p>
+   		<p>  <a href="https://github.com/TheAnn"> GitHub </a>  </p>
+   		<p>  <a href="https://www.linkedin.com/in/anna-lunterova-03231bb7/"> LinkedIn  </a>  </p>
+   		<p>  <a href="https://www.behance.net/annana9"> Behance </a>  </p>   
+   		<p>  <a href="https://www.instagram.com/theannnnn/"> Instagram </a> </b> </p>  
+   	 </div>
+     
 	</div>
-	
-	<div class="center">		
-		 
-        <img src="planting1.png" style= " width: 45%" id="image" onclick="changeImage()" />
-        <p class="text" id="text">  Thousands of days ago, and millions of heartbeats . . . <p>
-    </div>   
-            
-   <script type="text/javascript">
-   
-        pos = 0;
-        link = [ "padastarseed.gif","nurish1.png", "starseed2.gif","intheworldfood.jpg","intheworldfood.jpg" ];
-        //texts=["a","h"];
-        texts =["A dusty little star seed was born.","Kind and special caregiver took care of that little star, by nourishing it's body. Starting with sweet milk, the range of food was slowly expanded with an aim to make it shine and grow healthily.","Soon that star grew old enough to choose on it's own what she/he desire from the world of food. And especially, old enough to choose how to choose.", "This became unofficially her/his relationship with food.", "Hey! Welcome in the world of food." ];
-       
-        function changeImage(){
-        
-            document.getElementById("text").innerHTML="";
-            showText("text", texts[pos], 0, 50);  
-              
-            document.getElementById("image").src = link[pos];
-              
-            pos ++;
-            if (pos > 4) {
-            pos=4;
-            };
-        };
-   
-   var showText = function (target, message, index, interval) {   
-   
-  if (index < message.length) {
-    document.getElementById(target).append(message[index++]);
-    setTimeout(function () { showText(target, message, index, interval); }, interval);
-  }
-}
-   
-    </script>
-    
-		
-	</body>
+     
+
+   <footer>
+     <p>Copyright @ LittleBlackFox </p>
+   </footer>
+
+  </body>
 </html>
